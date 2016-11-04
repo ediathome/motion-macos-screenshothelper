@@ -18,7 +18,39 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add the ScreenshotHelper tool to your spec files like so:
+
+```
+describe 'My application' do
+  before do
+    @app = NSApplication.sharedApplication
+    @sh = Motion::ScreenshotHelper.new(my_config)
+  end
+
+  it 'takes a screenshot' do
+    @sh.shoot.should == true
+  end
+
+  it 'takes a screenshot after waiting' do
+  	# do something import with your GUI
+  	@sh.pause(1.0) # time in seconds to wait
+	@sh.shoot.should == true
+  end
+end
+````
+
+You may set the following config options when calling ```Motion::ScreenshotHelper.new`:
+
+```
+my_config = {
+      screenshot_mode: Motion::ScreenshotHelper::SCREENSHOT_MODE_FULLSCREEN, # for full-screenshots
+      shots_dir: 'screenshots', # the target dir for the screenshot files
+      file_basename: 'screenshot', # the basename for the screenshot files (a counter will be added) e.g. 'screenshot_0.png'
+      app_name: NSBundle.mainBundle.infoDictionary['CFBundleName'] # your application name needed for focusing the app with AppleScript
+}
+```
+
+ScreenshotHelper will make use of the screencapture command line tool.
 
 ## Contributing
 
