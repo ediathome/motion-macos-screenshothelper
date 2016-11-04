@@ -1,0 +1,19 @@
+PATH
+  remote: .
+  specs:
+    motion-macos-screenshots (1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (11.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  motion-macos-screenshots!
+  rake
+
+BUNDLED WITH
+   1.12.3
