@@ -1,4 +1,4 @@
-describe "Application 'motion-macos-screenshots'" do
+describe "Application 'motion-macos-screenshothelper'" do
   before do
     @app = NSApplication.sharedApplication
   end

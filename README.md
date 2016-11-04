@@ -1,4 +1,4 @@
-# motion-macos-screenshots
+# motion-macos-screenshothelper
 
 A gem for taking automated screenshots in macOS applications written in Rubymotion.
 
@@ -6,7 +6,7 @@ A gem for taking automated screenshots in macOS applications written in Rubymoti
 
 Add this line to your application's Gemfile:
 
-    gem 'motion-macos-screenshots'
+    gem 'motion-macos-screenshothelper'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install motion-macos-screenshots
+    $ gem install motion-macos-screenshothelper
 
 ## Usage
 

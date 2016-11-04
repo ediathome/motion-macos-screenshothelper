@@ -2,14 +2,14 @@
 VERSION = "1.0"
 
 Gem::Specification.new do |spec|
-  spec.name          = "motion-macos-screenshots"
+  spec.name          = "motion-macos-screenshothelper"
   spec.version       = VERSION
   spec.authors       = ["Martin Kolb"]
   spec.email         = ["admin@vt-learn.de"]
   spec.description   = %q{A gem for taking automated screenshots in macOS applications written in Rubymotion}
   spec.summary       = %q{This gem lets you take screenshots of your macOS app written in Rubymotion}
   spec.homepage      = "https://vt-learn.de"
-  spec.license       = ""
+  spec.license       = "MIT"
 
   files = []
   files << 'README.md'
