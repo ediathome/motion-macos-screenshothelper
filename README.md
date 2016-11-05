@@ -39,7 +39,7 @@ describe 'My application' do
 end
 ````
 
-You may set the following config options when calling ```Motion::ScreenshotHelper.new`:
+You may set the following config options when calling ```Motion::ScreenshotHelper.new```:
 
 ```
 my_config = {
@@ -49,6 +49,8 @@ my_config = {
       app_name: NSBundle.mainBundle.infoDictionary['CFBundleName'] # your application name needed for focusing the app with AppleScript
 }
 ```
+
+For screenshot_mode you may choose between SCREENSHOT_MODE_FULLSCREEN which will take a snapshot of your full screen or SCREENSHOT_MODE_MAINWINDOW which will try to find the application's main window and take a screenshot of this window's frame.
 
 ScreenshotHelper will make use of the screencapture command line tool.
 
