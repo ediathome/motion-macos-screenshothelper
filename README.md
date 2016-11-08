@@ -32,7 +32,7 @@ describe 'My application' do
   end
 
   it 'takes a screenshot after waiting' do
-  	# do something import with your GUI
+  	# do something important with your GUI
   	@sh.pause(1.0) # time in seconds to wait
 	@sh.shoot.should == true
   end
